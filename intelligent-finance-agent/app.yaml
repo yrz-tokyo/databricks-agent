@@ -1,0 +1,15 @@
+command:
+  - "uvicorn"
+  - "app:app"
+  - "--host"
+  - "0.0.0.0"
+  - "--port"
+  - "8000"
+
+env:
+  - name: SERVING_ENDPOINT_NAME
+    value: "agents_intelligent_finance_agent-agent_schema-finance_agent"
+  - name: DATABRICKS_TOKEN
+    value: ""
+  - name: LLM_ENDPOINT_NAME
+    value: "databricks-claude-3-7-sonnet"
