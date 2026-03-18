@@ -509,7 +509,7 @@ from databricks import agents
 deployment = agents.deploy(
     model_name=MODEL_NAME,
     model_version=registered_model.version,
-    scale_to_zero_enabled=True,
+    scale_to_zero_enabled=False,
     environment_vars={
         "LLM_ENDPOINT_NAME": LLM_ENDPOINT,
         "VS_NAME": VS_INDEX_NAME,
